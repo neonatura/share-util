@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ARCH=`arch`
+DIST=`cut -d" " -f1 /etc/issue|head -n 1`
+SRCDIR=@top_srcdir@
+RELDIR="$SRCDIR/release/"
+
+cd $SRCDIR
+rm -rf $RELDIR/share-util
+mkdir -p $RELDIR/share-util
+
+cd $RELDIR
+$SRCDIR/configure --libdir=$RELDIR/share-util --bindir=$RELDIR/share-util --sbindir=$RELDIR/share-util --docdir=$RELDIR/share-util
+make
+make install
+
+tar -cpf share-util.tar share-util
+gzip -f share-util.tar
+cp share-util.tar.gz share-util-@VERSION@_$DIST-$ARCH.tgz
+mv -f share-util.tar.gz share-util_$DIST-$ARCH.tgz

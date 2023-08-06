@@ -1,0 +1,24 @@
+@PACKAGE_NAME@ @PACKAGE_VERSION@
+
+A brief description of the files in this directory:
+
+  - shcat 
+                A script that prints a sharefs file to the output.
+
+  - shls 
+                A script that lists a sharefs directory.
+
+  - shrm 
+                A script that removes a sharefs directory or file.
+
+  - shmkdir
+                A script that makes a sharefs directory.
+
+  - shcp 
+                A script that copies a sharefs directory or file.
+
+  - docs 
+                Doxygen generated API documentation in HTML format.
+
+  - man 
+                Man pages for the Share Library suite.
