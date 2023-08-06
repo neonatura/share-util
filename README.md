@@ -1,4 +1,4 @@
-This is the official source code repository for the share runtime library and utility suite. 
+This is the official source code repository for the share runtime suite utility programs.
 
 
 <h2>Library Documentation</h2>
