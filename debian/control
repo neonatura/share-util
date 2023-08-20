@@ -1,9 +1,9 @@
-Source: libshare
+Source: share-util
 Section: libs
 Maintainer: Neo Natura <support@neo-natura.com>
 Priority: standard
 Homepage: http://www.sharelib.net/
 
-Package: libshare
+Package: share-util
 Architecture: amd64
 Description: The share library suite.
